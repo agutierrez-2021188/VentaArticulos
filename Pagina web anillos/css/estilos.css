@@ -1,0 +1,459 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f2f2;
+}
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo{
+    color: #642a73 ;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* Header*/
+header{
+    width: 100%;
+    height: 600px;
+    background: #000046;  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(193, 78%, 49%, 0.666), hsla(240, 100%, 14%, 0.666)), url(../image/joyas.png); 
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(193, 78%, 49%, 0.666), hsla(240, 100%, 14%, 0.666)), url(../image/joyas.png); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color: aliceblue;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color: #fff;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300px;
+    color: #fff;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* About us */
+main .contenedor-mid{
+    padding: 30px 0 60px 0;
+}
+
+.contenedor-mid{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-about-us{
+    width: 40%;
+}
+
+.contenedor-mid .contenido-textos{
+    width: 48%;
+}
+
+.contenido-textos h3{
+    margin-bottom: 16px;
+}
+
+.contenido-textos h3 span{
+    background: #4d0686;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 10px;
+}
+
+/* Galeria */
+.portafolio{
+    background: #f2f2f2;
+}
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative; 
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: rgba(6, 19, 132, 0.503);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 100px;
+}
+
+.hover-galeria p{
+    color: #fff; /* Letras del hover*/
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+/*Our team*/
+
+.about-services{
+    background: #f2f2f2;
+    padding-bottom: 30px;
+}
+
+.servicio-cont{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.servicio-ind{
+    width: 42%;
+    text-align: justify;
+}
+
+.servicio-ind img{
+    width: 90%;
+}
+
+.servicio-ind h3{
+    margin: 10px 0;
+}
+
+.servicio-ind h3{
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* Footer */
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;    
+}
+
+.content-foo h4{
+    color: #f2f2f2;
+    border-bottom: 3px solid #00a5f8;
+    padding-bottom: 5px;
+    padding-bottom: 10px;    
+}
+
+.content-foo p{
+    color: #ccc;   
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+
+/* Anillos */
+.header2{
+    width: 100%;
+    height: 600px;
+    background: #000046;  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(193, 78%, 49%, 0.666), hsla(240, 100%, 14%, 0.666)), url(../image/fondoAnillos.png);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(193, 78%, 49%, 0.666), hsla(240, 100%, 14%, 0.666)), url(../image/fondoAnillos.png);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.nuestros-inventarios{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.container{
+    max-width: 120rem;
+    margin: auto;
+    background-color:#f2f2f2;;
+}
+
+.inventarios{
+    display: grid;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(4,0.2fr);
+}
+
+.inventario{
+    background-color:  #0e72a9  ;
+    margin: 1rem;
+    padding: 0.60rem;
+
+}
+
+img{
+    width: 100%;    
+}
+
+.inventario-precio,
+.inventario-nombre{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.inventario-precio{
+    font-size: 1rem;
+    font-weight: 500;
+    color:  whitesmokess;
+}
+
+.inventario-nombre{
+    font-size: 0.9rem;
+    font-weight: 600;
+    color:  whitesmoke;
+}
+
+/*Conjuntos Pareja*/
+.header3{
+    width: 100%;
+    height: 600px;
+    background: #000046;  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(193, 78%, 49%, 0.666), hsla(240, 100%, 14%, 0.666)), url(../image/fondoParejas.png); 
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(193, 78%, 49%, 0.666), hsla(240, 100%, 14%, 0.666)), url(../image/fondoParejas.png); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+}
+
+/*Pulseras*/
+.header4{
+    width: 100%;
+    height: 600px;
+    background: #000046;  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(193, 78%, 49%, 0.666), hsla(240, 100%, 14%, 0.666)), url(../image/fondoPulseras.gif); 
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(193, 78%, 49%, 0.666), hsla(240, 100%, 14%, 0.666)), url(../image/fondoPulseras.gif); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+}
+
+/*Cadenas*/
+.header5{
+    width: 100%;
+    height: 600px;
+    background: #000046;  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(193, 78%, 49%, 0.666), hsla(240, 100%, 14%, 0.666)), url(../image/fondoCadenas.png); 
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(193, 78%, 49%, 0.666), hsla(240, 100%, 14%, 0.666)), url(../image/fondoCadenas.png); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+/* Justificación para telefono*/
+@media screen and (max-width: 900px){
+    header{
+        background-position: center;
+    }
+    
+    .contenedor-mid{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedor-mid .contenido-textos{
+        width: 90%;
+    }
+
+    .imagen-about-us{
+        width: 90%;
+    }
+
+    /* Galery */
+
+    .imagen-port{
+        width: 44%;
+    }
+
+    /* Servicios */
+
+    .servicio-cont{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .servicio-ind{
+        width: 100%;
+        text-align: center;
+    }
+
+    .servicio-ind:nth-child(1), .servicio-ind:nth-child(2){
+        margin-bottom: 60px;
+    }
+
+    .servicio-ind img{
+        width: 90%;
+    }
+
+    /*Anillos*/
+}
+
+@media screen and (max-width: 500px){
+    nav{
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+
+    nav > a{
+        margin-right: 5px;
+    }
+
+    .textos-header h1{
+        font-size: 35px;
+    }
+
+    .textos-header h2{
+        font-size: 20px;
+    }
+
+    /* About us*/
+
+    .imagen-about-us{
+        margin-bottom: 60px;
+        width: 99%;
+    }
+
+    .contenedor-mid .contenido-textos{
+        width: 95%;
+    }
+
+    /* Galeria */
+    .imagen-port{
+        width: 95%;
+    }
+
+    /* Footer */
+    .contenedor-footer{
+        flex-direction: column;
+        border: none;
+    }
+
+    .content-foo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .content-foo h4{
+        border: none;
+    }
+
+    .content-foo p{
+        color: #ccc;
+        border-bottom: 1px solid #f2f2f2;
+        padding: 20px;
+    }
+
+    .titulo-final{
+        font-size: 20px;
+    }
+}
